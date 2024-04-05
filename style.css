@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(34, 33, 33, 0.89) transparent;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    /* background-color: rgba(34, 33, 33, 0.89); */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+
+    background: linear-gradient(to bottom right, #000000, #333333, #000033);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+
+
+}
+
+.menu__link {
+
+    color: white;
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Alinhar itens verticalmente ao centro */
+    text-decoration: none;
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+}
+
+span{
+
+    flex: 1;
+    text-align: center;
+}
+
+ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+i{
+    margin: .1rem;
+}
+
+li {
+
+
+    border: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: #333333;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .3s;
+}
+
+li:hover {
+
+    background-color: #555555;
+    scale: 1.05;
+    transition: ease-in-out .3s;
+    color: #ffffff;
+    box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Cor de Fundo (Normal): #333333
+Cor de Fundo (Hover): #555555
+Cor do Texto: #FFFFFF */
+
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+p{
+
+    text-wrap: wrap;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    
+}
+
+.bio {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.descriptionBio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.photo {
+
+    border-radius: 200rem;
+    border: 3px solid black;
+    width: 55vw;
+    height: 55vw;
+
+}
+
+
+@media screen and (min-width: 500px) {
+
+
+    .photo {
+
+        width: 20rem;
+        height: 20rem;
+    }
+
+
+}
